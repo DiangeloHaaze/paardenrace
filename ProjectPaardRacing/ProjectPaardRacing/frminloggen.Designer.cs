@@ -82,6 +82,7 @@
             this.Controls.Add(this.txtgebruikersnaam);
             this.Name = "frminloggen";
             this.Text = "Inloggen";
+            this.Load += new System.EventHandler(this.Frminloggen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

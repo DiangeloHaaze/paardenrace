@@ -27,8 +27,8 @@ namespace ProjectPaardRacing
         private void btnInloggen_Click(object sender, EventArgs e)
         {
             //als men op de inloggen knop drukt word de gebruikersnaam opgeslagen in een publieke variabele die in dan in andere forms zal kunnen gebruikt worden.
-            //Daarna word de gebruiker doorverstuurd naar het startscherm. Wat er nog moet gedaan worden is foutcontrole op de ingegeven text om te zien of deze niet
-            //leeg is. (Diangelo)
+            //Daarna word de gebruiker doorverstuurd naar het startscherm. Als men niets heeft ingegeven als naam word een 
+            // automatische naam toegewezen 'annoniem' en word deze de gebruikersnaam(Diangelo)
             username = txtgebruikersnaam.Text;
             if(username == "")
             {
@@ -37,6 +37,11 @@ namespace ProjectPaardRacing
             frmStartPagina frm = new frmStartPagina();
             frm.Show();
             this.Hide();
+        }
+
+        private void Frminloggen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

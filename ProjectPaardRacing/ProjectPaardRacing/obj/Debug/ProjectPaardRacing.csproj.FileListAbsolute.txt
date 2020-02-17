@@ -19,3 +19,4 @@ C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardR
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.csproj.CoreCompileInputs.cache
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.exe
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.pdb
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmSettings.resources
