@@ -8,3 +8,14 @@ C:\Users\diang\source\repos\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\Proj
 C:\Users\diang\source\repos\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.csproj.GenerateResource.cache
 C:\Users\diang\source\repos\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.exe
 C:\Users\diang\source\repos\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.pdb
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\bin\Debug\ProjectPaardRacing.exe.config
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\bin\Debug\ProjectPaardRacing.exe
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\bin\Debug\ProjectPaardRacing.pdb
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.csprojAssemblyReference.cache
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frminloggen.resources
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.Properties.Resources.resources
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmStartPagina.resources
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.csproj.GenerateResource.cache
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.csproj.CoreCompileInputs.cache
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.exe
+C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.pdb

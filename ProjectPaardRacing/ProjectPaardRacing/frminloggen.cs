@@ -21,7 +21,7 @@ namespace ProjectPaardRacing
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnInloggen_Click(object sender, EventArgs e)
@@ -30,6 +30,10 @@ namespace ProjectPaardRacing
             //Daarna word de gebruiker doorverstuurd naar het startscherm. Wat er nog moet gedaan worden is foutcontrole op de ingegeven text om te zien of deze niet
             //leeg is. (Diangelo)
             username = txtgebruikersnaam.Text;
+            if(username == "")
+            {
+                username = "anoniem";
+            }
             frmStartPagina frm = new frmStartPagina();
             frm.Show();
             this.Hide();
