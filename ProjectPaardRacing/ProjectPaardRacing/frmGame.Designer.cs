@@ -42,6 +42,7 @@
             this.btnbankenrekening.TabIndex = 0;
             this.btnbankenrekening.Text = "Bank";
             this.btnbankenrekening.UseVisualStyleBackColor = true;
+            this.btnbankenrekening.Click += new System.EventHandler(this.Btnbankenrekening_Click);
             // 
             // btnOpenmarkt
             // 
@@ -51,6 +52,7 @@
             this.btnOpenmarkt.TabIndex = 1;
             this.btnOpenmarkt.Text = "Open Markt";
             this.btnOpenmarkt.UseVisualStyleBackColor = true;
+            this.btnOpenmarkt.Click += new System.EventHandler(this.BtnOpenmarkt_Click);
             // 
             // btnRacebaan
             // 
@@ -60,6 +62,7 @@
             this.btnRacebaan.TabIndex = 2;
             this.btnRacebaan.Text = "Racebaan";
             this.btnRacebaan.UseVisualStyleBackColor = true;
+            this.btnRacebaan.Click += new System.EventHandler(this.BtnRacebaan_Click);
             // 
             // btnTerug
             // 
@@ -69,6 +72,7 @@
             this.btnTerug.TabIndex = 3;
             this.btnTerug.Text = "Terug";
             this.btnTerug.UseVisualStyleBackColor = true;
+            this.btnTerug.Click += new System.EventHandler(this.BtnTerug_Click);
             // 
             // frmGame
             // 

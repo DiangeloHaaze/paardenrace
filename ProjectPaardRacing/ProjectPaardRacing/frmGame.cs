@@ -23,5 +23,33 @@ namespace ProjectPaardRacing
         {
 
         }
+
+        private void Btnbankenrekening_Click(object sender, EventArgs e)
+        {
+            frmbank frmbank = new frmbank();
+            frmbank.Show();
+            this.Hide();
+        }
+
+        private void BtnOpenmarkt_Click(object sender, EventArgs e)
+        {
+            frmmarkt markt = new frmmarkt();
+            markt.Show();
+            this.Hide();
+        }
+
+        private void BtnRacebaan_Click(object sender, EventArgs e)
+        {
+            frmRace race = new frmRace();
+            race.Show();
+            this.Hide();
+        }
+
+        private void BtnTerug_Click(object sender, EventArgs e)
+        {
+            frmStartPagina startPagina = new frmStartPagina();
+            startPagina.Show();
+            this.Hide();
+        }
     }
 }

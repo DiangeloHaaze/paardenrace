@@ -51,6 +51,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmbank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbank.Designer.cs">
+      <DependentUpon>frmbank.cs</DependentUpon>
+    </Compile>
     <Compile Include="frminloggen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +80,18 @@
     </Compile>
     <Compile Include="frmGame.Designer.cs">
       <DependentUpon>frmGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmarkt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmarkt.Designer.cs">
+      <DependentUpon>frmmarkt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRace.Designer.cs">
+      <DependentUpon>frmRace.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frminloggen.resx">
       <DependentUpon>frminloggen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRace.resx">
+      <DependentUpon>frmRace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>

@@ -62,7 +62,7 @@ namespace ProjectPaardRacing
 
         private void btnstartspel_Click(object sender, EventArgs e)
         {
-            // Om naarde game form te gaan
+            // Om naar de game form te gaan
             frmGame fromgame = new frmGame();
 
             fromgame.Show();
