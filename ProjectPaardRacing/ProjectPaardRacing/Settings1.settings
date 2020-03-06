@@ -3,22 +3,13 @@
   <Profiles />
   <Settings>
     <Setting Name="backGroundColorS" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">5</Value>
+      <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="BackGroundSongS" Type="System.String" Scope="User">
       <Value Profile="(Default)">Radetzky-Marsch.mp3</Value>
     </Setting>
     <Setting Name="AantalpaardenS" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="Paard1" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Geen</Value>
-    </Setting>
-    <Setting Name="Paard2" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Geen</Value>
-    </Setting>
-    <Setting Name="Paard3" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Geen</Value>
     </Setting>
   </Settings>
 </SettingsFile>

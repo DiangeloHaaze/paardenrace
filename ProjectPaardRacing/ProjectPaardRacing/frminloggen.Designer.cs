@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frminloggen));
             this.txtgebruikersnaam = new System.Windows.Forms.TextBox();
             this.lbltitel = new System.Windows.Forms.Label();
             this.lblgebruikersnaam = new System.Windows.Forms.Label();
@@ -50,7 +49,7 @@
             this.lbltitel.Location = new System.Drawing.Point(57, 9);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.Size = new System.Drawing.Size(126, 31);
-            this.lbltitel.TabIndex = 6;
+            this.lbltitel.TabIndex = 1;
             this.lbltitel.Text = "Inloggen";
             // 
             // lblgebruikersnaam
@@ -64,10 +63,10 @@
             // 
             // btnInloggen
             // 
-            this.btnInloggen.Location = new System.Drawing.Point(63, 127);
+            this.btnInloggen.Location = new System.Drawing.Point(63, 134);
             this.btnInloggen.Name = "btnInloggen";
             this.btnInloggen.Size = new System.Drawing.Size(120, 23);
-            this.btnInloggen.TabIndex = 2;
+            this.btnInloggen.TabIndex = 3;
             this.btnInloggen.Text = "Inloggen";
             this.btnInloggen.UseVisualStyleBackColor = true;
             this.btnInloggen.Click += new System.EventHandler(this.btnInloggen_Click);
@@ -76,12 +75,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 179);
+            this.ClientSize = new System.Drawing.Size(243, 192);
             this.Controls.Add(this.btnInloggen);
             this.Controls.Add(this.lblgebruikersnaam);
             this.Controls.Add(this.lbltitel);
             this.Controls.Add(this.txtgebruikersnaam);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frminloggen";
             this.Text = "Inloggen";
             this.Load += new System.EventHandler(this.Frminloggen_Load);
