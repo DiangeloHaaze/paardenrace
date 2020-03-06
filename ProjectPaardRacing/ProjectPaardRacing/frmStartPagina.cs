@@ -17,7 +17,11 @@ namespace ProjectPaardRacing
         public frmStartPagina()
         {
             InitializeComponent();
-            player.URL = Settings1.Default.BackGroundSongS;
+            if (!(Settings1.Default.BackGroundSongS.Equals("geen")))
+            {
+                player.URL = Settings1.Default.BackGroundSongS;
+            }
+            
         }
 
         private void frmStartPagina_Load(object sender, EventArgs e)
@@ -29,8 +33,9 @@ namespace ProjectPaardRacing
             string gebruiker = frminloggen.username;
             lblstarttitel.Text = "Welkom " + gebruiker;
             kleurwissel(Settings1.Default.backGroundColorS);
+       
             player.controls.play();
-         }
+        }
         private void kleurwissel(int kleur)
         {
             //Dit zorgt ervoor dat bij het aanpassen van het kleur het juiste kleurtje word gepakt en aangepast

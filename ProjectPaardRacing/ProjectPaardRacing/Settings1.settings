@@ -8,9 +8,6 @@
     <Setting Name="BackGroundSongS" Type="System.String" Scope="User">
       <Value Profile="(Default)">Radetzky-Marsch.mp3</Value>
     </Setting>
-    <Setting Name="AantalpaardenS" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
-    </Setting>
     <Setting Name="Paard1" Type="System.String" Scope="User">
       <Value Profile="(Default)">geen</Value>
     </Setting>
@@ -25,6 +22,9 @@
     </Setting>
     <Setting Name="Losses" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Item" Type="System.String" Scope="User">
+      <Value Profile="(Default)">geen</Value>
     </Setting>
   </Settings>
 </SettingsFile>

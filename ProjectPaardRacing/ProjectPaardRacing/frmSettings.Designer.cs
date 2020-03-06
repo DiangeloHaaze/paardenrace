@@ -42,6 +42,7 @@
             this.rdbsong2 = new System.Windows.Forms.RadioButton();
             this.rdbsong1 = new System.Windows.Forms.RadioButton();
             this.btnreset = new System.Windows.Forms.Button();
+            this.rdbgeen = new System.Windows.Forms.RadioButton();
             this.gpbkleur.SuspendLayout();
             this.gpbmuziek.SuspendLayout();
             this.SuspendLayout();
@@ -146,12 +147,13 @@
             // gpbmuziek
             // 
             this.gpbmuziek.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gpbmuziek.Controls.Add(this.rdbgeen);
             this.gpbmuziek.Controls.Add(this.rdbsong3);
             this.gpbmuziek.Controls.Add(this.rdbsong2);
             this.gpbmuziek.Controls.Add(this.rdbsong1);
             this.gpbmuziek.Location = new System.Drawing.Point(12, 203);
             this.gpbmuziek.Name = "gpbmuziek";
-            this.gpbmuziek.Size = new System.Drawing.Size(155, 90);
+            this.gpbmuziek.Size = new System.Drawing.Size(155, 113);
             this.gpbmuziek.TabIndex = 5;
             this.gpbmuziek.TabStop = false;
             this.gpbmuziek.Text = "Achtergrondmuziek";
@@ -198,6 +200,18 @@
             this.btnreset.TabIndex = 6;
             this.btnreset.Text = "Reset";
             this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.Click += new System.EventHandler(this.Btnreset_Click);
+            // 
+            // rdbgeen
+            // 
+            this.rdbgeen.AutoSize = true;
+            this.rdbgeen.Location = new System.Drawing.Point(6, 85);
+            this.rdbgeen.Name = "rdbgeen";
+            this.rdbgeen.Size = new System.Drawing.Size(51, 17);
+            this.rdbgeen.TabIndex = 3;
+            this.rdbgeen.Text = "Geen";
+            this.rdbgeen.UseVisualStyleBackColor = true;
+            this.rdbgeen.CheckedChanged += new System.EventHandler(this.Rdbgeen_CheckedChanged);
             // 
             // frmSettings
             // 
@@ -238,5 +252,6 @@
         private System.Windows.Forms.RadioButton rdbsong2;
         private System.Windows.Forms.RadioButton rdbsong1;
         private System.Windows.Forms.Button btnreset;
+        private System.Windows.Forms.RadioButton rdbgeen;
     }
 }

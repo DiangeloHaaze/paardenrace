@@ -13,6 +13,7 @@ namespace ProjectPaardRacing
 {
     public partial class frmSettings : Form
     {
+        string naam;
         public frmSettings()
         {
             InitializeComponent();
@@ -29,21 +30,18 @@ namespace ProjectPaardRacing
         private void Txtgebruiker_TextChanged(object sender, EventArgs e)
         {
             //kijkt of de je de naam hebt aangepast en past deze direct aan. Als je alles verwijdert komt de gebruikersnaam
-            // op anoniem te staan en word dit de gebruikersnaam(Diangelo)
-            String naam = txtgebruiker.Text;
-            if (naam.Equals(""))
-            {
-                txtgebruiker.Text = "anoniem";
-            }
-            else
-            {
+            // op anoniem te staan en word dit de gebruikersnaam(Diangelo)                
+            
                 frminloggen.username = txtgebruiker.Text;
-            }
         }
 
         private void Btnterug_Click(object sender, EventArgs e)
         {
             //Knop om terug naar het startscherm te gaan.
+            if (naam.Equals(""))
+            {
+                frminloggen.username = "Annoniem";
+            }
             frmStartPagina frm = new frmStartPagina();
             frm.Show();
             this.Hide();
@@ -114,6 +112,9 @@ namespace ProjectPaardRacing
                 case 3:
                     Settings1.Default.BackGroundSongS = "Sibelius-Andante_festivo.mp3";
                     break;
+                case 4:
+                    Settings1.Default.BackGroundSongS = "geen.mp3";
+                    break;
             }
             Settings1.Default.Save();
         }
@@ -136,6 +137,17 @@ namespace ProjectPaardRacing
         private void rdbsong3_CheckedChanged(object sender, EventArgs e)
         {
             Songwissel(3);
+        }
+
+        private void Btnreset_Click(object sender, EventArgs e)
+        {
+            Settings1.Default.backGroundColorS = 0;
+            Settings1.Default.BackGroundSongS = "geen";
+        }
+
+        private void Rdbgeen_CheckedChanged(object sender, EventArgs e)
+        {
+            Songwissel(4);
         }
     }
 }
