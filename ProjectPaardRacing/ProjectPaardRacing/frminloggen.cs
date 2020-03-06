@@ -8,19 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ProjectPaardRacing
 {
     public partial class frminloggen : Form
     {
         //publieke variabele die de gebruikersnaam doorgeeft.
-        public static string username, muziek;
-        public static int kleur;
-
+        public static string username;
         public frminloggen()
         {
             InitializeComponent();
-            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -30,17 +26,23 @@ namespace ProjectPaardRacing
 
         private void btnInloggen_Click(object sender, EventArgs e)
         {
+            //als men op de inloggen knop drukt word de gebruikersnaam opgeslagen in een publieke variabele die in dan in andere forms zal kunnen gebruikt worden.
+            //Daarna word de gebruiker doorverstuurd naar het startscherm. Als men niets heeft ingegeven als naam word een 
+            // automatische naam toegewezen 'annoniem' en word deze de gebruikersnaam(Diangelo)
             username = txtgebruikersnaam.Text;
-
-            if (string.IsNullOrEmpty(username))
+            if(username == "")
             {
-                username = "Annoniem";
+                username = "anoniem";
             }
-
-            frmStartPagina frmStartPagina = new frmStartPagina();
-            frmStartPagina.Show();
+            frmStartPagina frm = new frmStartPagina();
+            frm.Show();
             this.Hide();
+        }
 
+        private void Frminloggen_Load(object sender, EventArgs e)
+        {
+            
+            kleurwissel(Settings1.Default.backGroundColorS);
         }
         private void kleurwissel(int kleur)
         {
@@ -64,18 +66,5 @@ namespace ProjectPaardRacing
                     break;
             }
         }
-        private void btnregistratie_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        private void Frminloggen_Load(object sender, EventArgs e)
-        {
-            kleur = Settings1.Default.backGroundColorS;
-            muziek = Settings1.Default.BackGroundSongS;
-            kleurwissel(kleur);
-        }
-       
     }
 }//test

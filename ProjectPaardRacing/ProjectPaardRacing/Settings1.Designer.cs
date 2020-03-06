@@ -25,7 +25,7 @@ namespace ProjectPaardRacing {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int backGroundColorS {
             get {
                 return ((int)(this["backGroundColorS"]));
@@ -56,42 +56,6 @@ namespace ProjectPaardRacing {
             }
             set {
                 this["AantalpaardenS"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Geen")]
-        public string Paard1 {
-            get {
-                return ((string)(this["Paard1"]));
-            }
-            set {
-                this["Paard1"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Geen")]
-        public string Paard2 {
-            get {
-                return ((string)(this["Paard2"]));
-            }
-            set {
-                this["Paard2"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Geen")]
-        public string Paard3 {
-            get {
-                return ((string)(this["Paard3"]));
-            }
-            set {
-                this["Paard3"] = value;
             }
         }
     }

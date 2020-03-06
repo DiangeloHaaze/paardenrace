@@ -17,11 +17,7 @@ namespace ProjectPaardRacing
         public frmStartPagina()
         {
             InitializeComponent();
-            if (!(Settings1.Default.BackGroundSongS.Equals("geen")))
-            {
-                player.URL = Settings1.Default.BackGroundSongS;
-            }
-            
+            player.URL = Settings1.Default.BackGroundSongS;
         }
 
         private void frmStartPagina_Load(object sender, EventArgs e)
