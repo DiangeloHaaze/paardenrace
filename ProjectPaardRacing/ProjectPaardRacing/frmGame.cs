@@ -13,7 +13,7 @@ namespace ProjectPaardRacing
 {
     public partial class frmGame : Form
     {
-        public static int aantalpaarden = Settings1.Default.AantalpaardenS;
+        public static int aantalpaarden = Settings1.Default.Paard1;
         public frmGame()
         {
             InitializeComponent();

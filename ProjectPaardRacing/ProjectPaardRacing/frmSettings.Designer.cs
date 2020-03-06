@@ -38,9 +38,10 @@
             this.txtgebruiker = new System.Windows.Forms.TextBox();
             this.btnterug = new System.Windows.Forms.Button();
             this.gpbmuziek = new System.Windows.Forms.GroupBox();
+            this.rdbsong3 = new System.Windows.Forms.RadioButton();
             this.rdbsong2 = new System.Windows.Forms.RadioButton();
             this.rdbsong1 = new System.Windows.Forms.RadioButton();
-            this.rdbsong3 = new System.Windows.Forms.RadioButton();
+            this.btnreset = new System.Windows.Forms.Button();
             this.gpbkleur.SuspendLayout();
             this.gpbmuziek.SuspendLayout();
             this.SuspendLayout();
@@ -156,6 +157,17 @@
             this.gpbmuziek.Text = "Achtergrondmuziek";
             this.gpbmuziek.Enter += new System.EventHandler(this.gpbmuziek_Enter);
             // 
+            // rdbsong3
+            // 
+            this.rdbsong3.AutoSize = true;
+            this.rdbsong3.Location = new System.Drawing.Point(6, 65);
+            this.rdbsong3.Name = "rdbsong3";
+            this.rdbsong3.Size = new System.Drawing.Size(141, 17);
+            this.rdbsong3.TabIndex = 2;
+            this.rdbsong3.Text = "Sibelius Andente Festivo";
+            this.rdbsong3.UseVisualStyleBackColor = true;
+            this.rdbsong3.CheckedChanged += new System.EventHandler(this.rdbsong3_CheckedChanged);
+            // 
             // rdbsong2
             // 
             this.rdbsong2.AutoSize = true;
@@ -178,22 +190,21 @@
             this.rdbsong1.UseVisualStyleBackColor = true;
             this.rdbsong1.CheckedChanged += new System.EventHandler(this.rdbsong1_CheckedChanged);
             // 
-            // rdbsong3
+            // btnreset
             // 
-            this.rdbsong3.AutoSize = true;
-            this.rdbsong3.Location = new System.Drawing.Point(6, 65);
-            this.rdbsong3.Name = "rdbsong3";
-            this.rdbsong3.Size = new System.Drawing.Size(141, 17);
-            this.rdbsong3.TabIndex = 2;
-            this.rdbsong3.Text = "Sibelius Andente Festivo";
-            this.rdbsong3.UseVisualStyleBackColor = true;
-            this.rdbsong3.CheckedChanged += new System.EventHandler(this.rdbsong3_CheckedChanged);
+            this.btnreset.Location = new System.Drawing.Point(179, 377);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(114, 56);
+            this.btnreset.TabIndex = 6;
+            this.btnreset.Text = "Reset";
+            this.btnreset.UseVisualStyleBackColor = true;
             // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(305, 455);
+            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.gpbmuziek);
             this.Controls.Add(this.btnterug);
             this.Controls.Add(this.txtgebruiker);
@@ -226,5 +237,6 @@
         private System.Windows.Forms.RadioButton rdbsong3;
         private System.Windows.Forms.RadioButton rdbsong2;
         private System.Windows.Forms.RadioButton rdbsong1;
+        private System.Windows.Forms.Button btnreset;
     }
 }
