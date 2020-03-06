@@ -11,5 +11,20 @@
     <Setting Name="AantalpaardenS" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="Paard1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">geen</Value>
+    </Setting>
+    <Setting Name="Paard2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">geen</Value>
+    </Setting>
+    <Setting Name="Paard3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">geen</Value>
+    </Setting>
+    <Setting Name="Wins" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Losses" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

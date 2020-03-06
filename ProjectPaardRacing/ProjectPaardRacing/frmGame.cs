@@ -13,15 +13,10 @@ namespace ProjectPaardRacing
 {
     public partial class frmGame : Form
     {
-        public static int aantalpaarden = Settings1.Default.Paard1;
+        public static String aantalpaarden = Settings1.Default.Paard1;
         public frmGame()
         {
             InitializeComponent();
-        }
-
-        private void frmGame_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void Btnbankenrekening_Click(object sender, EventArgs e)
@@ -50,6 +45,12 @@ namespace ProjectPaardRacing
             frmStartPagina startPagina = new frmStartPagina();
             startPagina.Show();
             this.Hide();
+        }
+
+        private void FrmGame_Load_1(object sender, EventArgs e)
+        {
+            //gebruikersnaam checken
+            lblGebruikersnaam.Text = frminloggen.username;
         }
     }
 }

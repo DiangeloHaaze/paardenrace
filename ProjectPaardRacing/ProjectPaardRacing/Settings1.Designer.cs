@@ -49,6 +49,18 @@ namespace ProjectPaardRacing {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int AantalpaardenS {
+            get {
+                return ((int)(this["AantalpaardenS"]));
+            }
+            set {
+                this["AantalpaardenS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("geen")]
         public string Paard1 {
             get {
@@ -86,9 +98,9 @@ namespace ProjectPaardRacing {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Wins {
+        public string Wins {
             get {
-                return ((int)(this["Wins"]));
+                return ((string)(this["Wins"]));
             }
             set {
                 this["Wins"] = value;
@@ -98,9 +110,9 @@ namespace ProjectPaardRacing {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Losses {
+        public string Losses {
             get {
-                return ((int)(this["Losses"]));
+                return ((string)(this["Losses"]));
             }
             set {
                 this["Losses"] = value;

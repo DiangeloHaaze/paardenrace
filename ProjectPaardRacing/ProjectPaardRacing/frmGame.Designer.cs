@@ -33,16 +33,17 @@
             this.btnRacebaan = new System.Windows.Forms.Button();
             this.btnTerug = new System.Windows.Forms.Button();
             this.btnstallen = new System.Windows.Forms.Button();
-            this.lbltussenteken2 = new System.Windows.Forms.Label();
-            this.lblscoreloss = new System.Windows.Forms.Label();
-            this.lbltussenteken1 = new System.Windows.Forms.Label();
-            this.lbll = new System.Windows.Forms.Label();
-            this.lbluser = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblscorewins = new System.Windows.Forms.Label();
-            this.lblw = new System.Windows.Forms.Label();
+            this.lblSaldo = new System.Windows.Forms.Label();
+            this.lblSaldoEuro = new System.Windows.Forms.Label();
+            this.lblGebruikersnaam = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.lblLevelAantal = new System.Windows.Forms.Label();
+            this.lblGewonnen = new System.Windows.Forms.Label();
+            this.lblVerloren = new System.Windows.Forms.Label();
+            this.lblGewonnenAant = new System.Windows.Forms.Label();
+            this.lblVerlorenAant = new System.Windows.Forms.Label();
+            this.lblWedstrijden = new System.Windows.Forms.Label();
+            this.lblWedstrijdenAantal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnbankenrekening
@@ -94,109 +95,120 @@
             this.btnstallen.Text = "Stallen";
             this.btnstallen.UseVisualStyleBackColor = true;
             // 
-            // lbltussenteken2
+            // lblSaldo
             // 
-            this.lbltussenteken2.AutoSize = true;
-            this.lbltussenteken2.Location = new System.Drawing.Point(358, 180);
-            this.lbltussenteken2.Name = "lbltussenteken2";
-            this.lbltussenteken2.Size = new System.Drawing.Size(9, 13);
-            this.lbltussenteken2.TabIndex = 10;
-            this.lbltussenteken2.Text = "|";
+            this.lblSaldo.AutoSize = true;
+            this.lblSaldo.Location = new System.Drawing.Point(507, 9);
+            this.lblSaldo.Name = "lblSaldo";
+            this.lblSaldo.Size = new System.Drawing.Size(37, 13);
+            this.lblSaldo.TabIndex = 6;
+            this.lblSaldo.Text = "Saldo:";
             // 
-            // lblscoreloss
+            // lblSaldoEuro
             // 
-            this.lblscoreloss.AutoSize = true;
-            this.lblscoreloss.Location = new System.Drawing.Point(377, 180);
-            this.lblscoreloss.Name = "lblscoreloss";
-            this.lblscoreloss.Size = new System.Drawing.Size(13, 13);
-            this.lblscoreloss.TabIndex = 11;
-            this.lblscoreloss.Text = "0";
+            this.lblSaldoEuro.AutoSize = true;
+            this.lblSaldoEuro.Location = new System.Drawing.Point(550, 9);
+            this.lblSaldoEuro.Name = "lblSaldoEuro";
+            this.lblSaldoEuro.Size = new System.Drawing.Size(40, 13);
+            this.lblSaldoEuro.TabIndex = 9;
+            this.lblSaldoEuro.Text = "bedrag";
             // 
-            // lbltussenteken1
+            // lblGebruikersnaam
             // 
-            this.lbltussenteken1.AutoSize = true;
-            this.lbltussenteken1.Location = new System.Drawing.Point(358, 167);
-            this.lbltussenteken1.Name = "lbltussenteken1";
-            this.lbltussenteken1.Size = new System.Drawing.Size(9, 13);
-            this.lbltussenteken1.TabIndex = 13;
-            this.lbltussenteken1.Text = "|";
+            this.lblGebruikersnaam.AutoSize = true;
+            this.lblGebruikersnaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGebruikersnaam.Location = new System.Drawing.Point(269, 42);
+            this.lblGebruikersnaam.Name = "lblGebruikersnaam";
+            this.lblGebruikersnaam.Size = new System.Drawing.Size(184, 25);
+            this.lblGebruikersnaam.TabIndex = 5;
+            this.lblGebruikersnaam.Text = "Gebruikersnaam";
             // 
-            // lbll
+            // lblLevel
             // 
-            this.lbll.AutoSize = true;
-            this.lbll.Location = new System.Drawing.Point(377, 167);
-            this.lbll.Name = "lbll";
-            this.lbll.Size = new System.Drawing.Size(13, 13);
-            this.lbll.TabIndex = 14;
-            this.lbll.Text = "L";
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.Location = new System.Drawing.Point(336, 9);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(36, 13);
+            this.lblLevel.TabIndex = 10;
+            this.lblLevel.Text = "Level:";
             // 
-            // lbluser
+            // lblLevelAantal
             // 
-            this.lbluser.AutoSize = true;
-            this.lbluser.Location = new System.Drawing.Point(242, 54);
-            this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(87, 13);
-            this.lbluser.TabIndex = 5;
-            this.lbluser.Text = "Gebruikersnaam:";
+            this.lblLevelAantal.AutoSize = true;
+            this.lblLevelAantal.Location = new System.Drawing.Point(378, 9);
+            this.lblLevelAantal.Name = "lblLevelAantal";
+            this.lblLevelAantal.Size = new System.Drawing.Size(13, 13);
+            this.lblLevelAantal.TabIndex = 11;
+            this.lblLevelAantal.Text = "0";
             // 
-            // label2
+            // lblGewonnen
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Saldo:";
+            this.lblGewonnen.AutoSize = true;
+            this.lblGewonnen.Location = new System.Drawing.Point(273, 162);
+            this.lblGewonnen.Name = "lblGewonnen";
+            this.lblGewonnen.Size = new System.Drawing.Size(149, 13);
+            this.lblGewonnen.TabIndex = 12;
+            this.lblGewonnen.Text = "Aantal gewonnen wedstrijden:";
             // 
-            // label3
+            // lblVerloren
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(242, 176);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Score:";
+            this.lblVerloren.AutoSize = true;
+            this.lblVerloren.Location = new System.Drawing.Point(285, 209);
+            this.lblVerloren.Name = "lblVerloren";
+            this.lblVerloren.Size = new System.Drawing.Size(137, 13);
+            this.lblVerloren.TabIndex = 13;
+            this.lblVerloren.Text = "Aantal verloren wedstrijden:";
             // 
-            // label4
+            // lblGewonnenAant
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(242, 237);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Paarden:";
+            this.lblGewonnenAant.AutoSize = true;
+            this.lblGewonnenAant.Location = new System.Drawing.Point(429, 162);
+            this.lblGewonnenAant.Name = "lblGewonnenAant";
+            this.lblGewonnenAant.Size = new System.Drawing.Size(13, 13);
+            this.lblGewonnenAant.TabIndex = 14;
+            this.lblGewonnenAant.Text = "0";
             // 
-            // lblscorewins
+            // lblVerlorenAant
             // 
-            this.lblscorewins.AutoSize = true;
-            this.lblscorewins.Location = new System.Drawing.Point(339, 180);
-            this.lblscorewins.Name = "lblscorewins";
-            this.lblscorewins.Size = new System.Drawing.Size(13, 13);
-            this.lblscorewins.TabIndex = 9;
-            this.lblscorewins.Text = "0";
+            this.lblVerlorenAant.AutoSize = true;
+            this.lblVerlorenAant.Location = new System.Drawing.Point(429, 209);
+            this.lblVerlorenAant.Name = "lblVerlorenAant";
+            this.lblVerlorenAant.Size = new System.Drawing.Size(13, 13);
+            this.lblVerlorenAant.TabIndex = 15;
+            this.lblVerlorenAant.Text = "0";
             // 
-            // lblw
+            // lblWedstrijden
             // 
-            this.lblw.AutoSize = true;
-            this.lblw.Location = new System.Drawing.Point(339, 167);
-            this.lblw.Name = "lblw";
-            this.lblw.Size = new System.Drawing.Size(18, 13);
-            this.lblw.TabIndex = 12;
-            this.lblw.Text = "W";
+            this.lblWedstrijden.AutoSize = true;
+            this.lblWedstrijden.Location = new System.Drawing.Point(273, 115);
+            this.lblWedstrijden.Name = "lblWedstrijden";
+            this.lblWedstrijden.Size = new System.Drawing.Size(148, 13);
+            this.lblWedstrijden.TabIndex = 16;
+            this.lblWedstrijden.Text = "Aantal gespeelde wedstrijden:";
+            // 
+            // lblWedstrijdenAantal
+            // 
+            this.lblWedstrijdenAantal.AutoSize = true;
+            this.lblWedstrijdenAantal.Location = new System.Drawing.Point(428, 115);
+            this.lblWedstrijdenAantal.Name = "lblWedstrijdenAantal";
+            this.lblWedstrijdenAantal.Size = new System.Drawing.Size(13, 13);
+            this.lblWedstrijdenAantal.TabIndex = 17;
+            this.lblWedstrijdenAantal.Text = "0";
             // 
             // frmGame
             // 
-            this.ClientSize = new System.Drawing.Size(567, 343);
-            this.Controls.Add(this.lbll);
-            this.Controls.Add(this.lbltussenteken1);
-            this.Controls.Add(this.lblw);
-            this.Controls.Add(this.lblscoreloss);
-            this.Controls.Add(this.lbltussenteken2);
-            this.Controls.Add(this.lblscorewins);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lbluser);
+            this.ClientSize = new System.Drawing.Size(605, 369);
+            this.Controls.Add(this.lblWedstrijdenAantal);
+            this.Controls.Add(this.lblWedstrijden);
+            this.Controls.Add(this.lblVerlorenAant);
+            this.Controls.Add(this.lblGewonnenAant);
+            this.Controls.Add(this.lblVerloren);
+            this.Controls.Add(this.lblGewonnen);
+            this.Controls.Add(this.lblLevelAantal);
+            this.Controls.Add(this.lblLevel);
+            this.Controls.Add(this.lblSaldoEuro);
+            this.Controls.Add(this.lblSaldo);
+            this.Controls.Add(this.lblGebruikersnaam);
             this.Controls.Add(this.btnstallen);
             this.Controls.Add(this.btnTerug);
             this.Controls.Add(this.btnRacebaan);
@@ -204,6 +216,7 @@
             this.Controls.Add(this.btnbankenrekening);
             this.Name = "frmGame";
             this.Text = "Game";
+            this.Load += new System.EventHandler(this.FrmGame_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,15 +234,16 @@
         private System.Windows.Forms.Button btnRacebaan;
         private System.Windows.Forms.Button btnTerug;
         private System.Windows.Forms.Button btnstallen;
-        private System.Windows.Forms.Label lbltussenteken2;
-        private System.Windows.Forms.Label lblscoreloss;
-        private System.Windows.Forms.Label lbltussenteken1;
-        private System.Windows.Forms.Label lbll;
-        private System.Windows.Forms.Label lbluser;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblscorewins;
-        private System.Windows.Forms.Label lblw;
+        private System.Windows.Forms.Label lblSaldo;
+        private System.Windows.Forms.Label lblSaldoEuro;
+        private System.Windows.Forms.Label lblGebruikersnaam;
+        private System.Windows.Forms.Label lblLevel;
+        private System.Windows.Forms.Label lblLevelAantal;
+        private System.Windows.Forms.Label lblGewonnen;
+        private System.Windows.Forms.Label lblVerloren;
+        private System.Windows.Forms.Label lblGewonnenAant;
+        private System.Windows.Forms.Label lblVerlorenAant;
+        private System.Windows.Forms.Label lblWedstrijden;
+        private System.Windows.Forms.Label lblWedstrijdenAantal;
     }
 }
