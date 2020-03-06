@@ -78,6 +78,7 @@
             this.btnTerug.Text = "Terug";
             this.btnTerug.UseVisualStyleBackColor = true;
             this.btnTerug.Click += new System.EventHandler(this.BtnTerug_Click);
+<<<<<<< HEAD
             // 
             // lblgebruiker
             // 
@@ -116,6 +117,8 @@
             this.btnstallen.Text = "Stallen";
             this.btnstallen.UseVisualStyleBackColor = true;
             this.btnstallen.Click += new System.EventHandler(this.btnstallen_Click);
+=======
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38
             // 
             // frmGame
             // 

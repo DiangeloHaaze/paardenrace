@@ -94,12 +94,15 @@
     <Compile Include="frmRace.Designer.cs">
       <DependentUpon>frmRace.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmstallen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmstallen.Designer.cs">
       <DependentUpon>frmstallen.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmStartPagina.cs">
@@ -128,9 +131,12 @@
     <EmbeddedResource Include="frminloggen.resx">
       <DependentUpon>frminloggen.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmmarkt.resx">
       <DependentUpon>frmmarkt.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38
     <EmbeddedResource Include="frmRace.resx">
       <DependentUpon>frmRace.cs</DependentUpon>
     </EmbeddedResource>

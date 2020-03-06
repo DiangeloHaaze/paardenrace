@@ -44,6 +44,7 @@ C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardR
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.csproj.ResolveComReference.cache
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmGame.resources
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmRace.resources
+<<<<<<< HEAD
 C:\Users\diang\source\repos\paardenrace\ProjectPaardRacing\ProjectPaardRacing\bin\Debug\ProjectPaardRacing.exe.config
 C:\Users\diang\source\repos\paardenrace\ProjectPaardRacing\ProjectPaardRacing\bin\Debug\ProjectPaardRacing.exe
 C:\Users\diang\source\repos\paardenrace\ProjectPaardRacing\ProjectPaardRacing\bin\Debug\ProjectPaardRacing.pdb
@@ -65,3 +66,5 @@ C:\Users\diang\source\repos\paardenrace\ProjectPaardRacing\ProjectPaardRacing\ob
 C:\Users\diang\source\repos\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmbank.resources
 C:\Users\diang\source\repos\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmmarkt.resources
 C:\Users\diang\source\repos\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmstallen.resources
+=======
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38

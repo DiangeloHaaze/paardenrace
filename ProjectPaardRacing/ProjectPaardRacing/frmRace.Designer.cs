@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRace));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -138,10 +139,15 @@
             this.btnplustien.Text = "Plus 1000";
             this.btnplustien.UseVisualStyleBackColor = true;
             // 
+=======
+            this.SuspendLayout();
+            // 
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38
             // frmRace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1283, 637);
             this.Controls.Add(this.btnplustien);
             this.Controls.Add(this.btnplusvijf);
@@ -163,11 +169,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+=======
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "frmRace";
+            this.Text = "frmRace";
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38
             this.ResumeLayout(false);
 
         }
 
         #endregion
+<<<<<<< HEAD
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -179,5 +191,7 @@
         private System.Windows.Forms.Button btneen;
         private System.Windows.Forms.Button btnplusvijf;
         private System.Windows.Forms.Button btnplustien;
+=======
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38
     }
 }

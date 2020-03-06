@@ -16,6 +16,7 @@ namespace ProjectPaardRacing
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void btnterug_Click(object sender, EventArgs e)
         {
@@ -51,5 +52,7 @@ namespace ProjectPaardRacing
         {
             kleurwissel(frminloggen.kleur);
         }
+=======
+>>>>>>> bdc4c34bd12fd77c305ac848552bfc65afe99f38
     }
 }
