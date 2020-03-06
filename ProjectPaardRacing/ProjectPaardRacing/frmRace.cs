@@ -8,39 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ProjectPaardRacing
 {
-    public partial class frminloggen : Form
+    public partial class frmRace : Form
     {
-        //publieke variabele die de gebruikersnaam doorgeeft.
-        public static string username, muziek;
-        public static int kleur;
-
-        public frminloggen()
+        public frmRace()
         {
             InitializeComponent();
-            
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnterug_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void btnInloggen_Click(object sender, EventArgs e)
-        {
-            username = txtgebruikersnaam.Text;
-
-            if (string.IsNullOrEmpty(username))
-            {
-                username = "Annoniem";
-            }
-
-            frmStartPagina frmStartPagina = new frmStartPagina();
-            frmStartPagina.Show();
+            // De knop om terug te gaan naar de vorige pagina
+            frmGame game = new frmGame();
+            game.Show();
             this.Hide();
-
         }
         private void kleurwissel(int kleur)
         {
@@ -64,18 +46,10 @@ namespace ProjectPaardRacing
                     break;
             }
         }
-        private void btnregistratie_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
 
-        private void Frminloggen_Load(object sender, EventArgs e)
+        private void frmRace_Load(object sender, EventArgs e)
         {
-            kleur = Settings1.Default.backGroundColorS;
-            muziek = Settings1.Default.BackGroundSongS;
-            kleurwissel(kleur);
+            kleurwissel(frminloggen.kleur);
         }
-       
     }
 }

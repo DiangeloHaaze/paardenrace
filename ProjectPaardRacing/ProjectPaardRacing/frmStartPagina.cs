@@ -17,7 +17,11 @@ namespace ProjectPaardRacing
         public frmStartPagina()
         {
             InitializeComponent();
-            player.URL = Settings1.Default.BackGroundSongS;
+            if (!(Settings1.Default.BackGroundSongS.Equals("geen")))
+            {
+                player.URL = Settings1.Default.BackGroundSongS;
+            }
+            
         }
 
         private void frmStartPagina_Load(object sender, EventArgs e)
@@ -62,7 +66,7 @@ namespace ProjectPaardRacing
 
         private void btnstartspel_Click(object sender, EventArgs e)
         {
-            // Om naarde game form te gaan
+            // Om naar de game form te gaan
             frmGame fromgame = new frmGame();
 
             fromgame.Show();

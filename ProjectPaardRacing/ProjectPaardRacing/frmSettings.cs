@@ -114,6 +114,9 @@ namespace ProjectPaardRacing
                 case 3:
                     Settings1.Default.BackGroundSongS = "Sibelius-Andante_festivo.mp3";
                     break;
+                case 4:
+                    Settings1.Default.BackGroundSongS = "geen";
+                    break;
             }
             Settings1.Default.Save();
         }
@@ -136,6 +139,11 @@ namespace ProjectPaardRacing
         private void rdbsong3_CheckedChanged(object sender, EventArgs e)
         {
             Songwissel(3);
+        }
+
+        private void rdbgeen_CheckedChanged(object sender, EventArgs e)
+        {
+            Songwissel(4);
         }
     }
 }
