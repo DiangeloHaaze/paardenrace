@@ -12,7 +12,7 @@ namespace ProjectPaardRacing {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.2.0.0")]
     internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
@@ -49,13 +49,61 @@ namespace ProjectPaardRacing {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int AantalpaardenS {
+        [global::System.Configuration.DefaultSettingValueAttribute("geen")]
+        public string Paard1 {
             get {
-                return ((int)(this["AantalpaardenS"]));
+                return ((string)(this["Paard1"]));
             }
             set {
-                this["AantalpaardenS"] = value;
+                this["Paard1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("geen")]
+        public string Paard2 {
+            get {
+                return ((string)(this["Paard2"]));
+            }
+            set {
+                this["Paard2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("geen")]
+        public string Paard3 {
+            get {
+                return ((string)(this["Paard3"]));
+            }
+            set {
+                this["Paard3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Wins {
+            get {
+                return ((int)(this["Wins"]));
+            }
+            set {
+                this["Wins"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Losses {
+            get {
+                return ((int)(this["Losses"]));
+            }
+            set {
+                this["Losses"] = value;
             }
         }
     }

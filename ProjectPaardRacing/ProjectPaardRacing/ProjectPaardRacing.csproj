@@ -93,6 +93,12 @@
     <Compile Include="frmRace.Designer.cs">
       <DependentUpon>frmRace.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmstal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstal.Designer.cs">
+      <DependentUpon>frmstal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmStartPagina.cs">
@@ -188,6 +194,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3873feaeca45660933ae7959e93e33b4_horse-race-track-clipart-horse-race-track-clip-art-images-3854-_1000-1000.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racetrack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
