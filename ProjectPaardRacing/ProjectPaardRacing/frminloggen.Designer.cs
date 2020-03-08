@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frminloggen));
             this.txtgebruikersnaam = new System.Windows.Forms.TextBox();
             this.lbltitel = new System.Windows.Forms.Label();
             this.lblgebruikersnaam = new System.Windows.Forms.Label();
@@ -80,6 +81,7 @@
             this.Controls.Add(this.lblgebruikersnaam);
             this.Controls.Add(this.lbltitel);
             this.Controls.Add(this.txtgebruikersnaam);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frminloggen";
             this.Text = "Inloggen";
             this.Load += new System.EventHandler(this.Frminloggen_Load);

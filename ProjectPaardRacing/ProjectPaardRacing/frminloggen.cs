@@ -14,6 +14,7 @@ namespace ProjectPaardRacing
     {
         //publieke variabele die de gebruikersnaam doorgeeft.
         public static string username;
+        public static int saldo = Settings1.Default.Saldo;
         public frminloggen()
         {
             InitializeComponent();

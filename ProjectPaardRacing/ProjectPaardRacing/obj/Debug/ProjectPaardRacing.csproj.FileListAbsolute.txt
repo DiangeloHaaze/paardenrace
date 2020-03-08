@@ -82,3 +82,7 @@ C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\paardenrace\ProjectPaardRacing\P
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.csproj.CoreCompileInputs.cache
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.exe
 C:\Users\RLL6ib\Desktop\paardenrace\paardenrace\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.pdb
+C:\Users\diang\source\repos\tets\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmbank.resources
+C:\Users\diang\source\repos\tets\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmmarkt.resources
+C:\Users\diang\source\repos\tets\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmRace.resources
+C:\Users\diang\source\repos\tets\paardenrace\ProjectPaardRacing\ProjectPaardRacing\obj\Debug\ProjectPaardRacing.frmstal.resources

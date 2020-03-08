@@ -51,6 +51,14 @@ namespace ProjectPaardRacing
         {
             //gebruikersnaam checken
             lblGebruikersnaam.Text = frminloggen.username;
+            lblSaldoEuro.Text = Convert.ToString(Settings1.Default.Saldo);
+        }
+
+        private void btnstallen_Click(object sender, EventArgs e)
+        {
+            frmstal stal = new frmstal();
+            stal.Show();
+            this.Hide();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGame));
             this.btnbankenrekening = new System.Windows.Forms.Button();
             this.btnOpenmarkt = new System.Windows.Forms.Button();
             this.btnRacebaan = new System.Windows.Forms.Button();
@@ -94,6 +95,7 @@
             this.btnstallen.TabIndex = 4;
             this.btnstallen.Text = "Stallen";
             this.btnstallen.UseVisualStyleBackColor = true;
+            this.btnstallen.Click += new System.EventHandler(this.btnstallen_Click);
             // 
             // lblSaldo
             // 
@@ -214,6 +216,7 @@
             this.Controls.Add(this.btnRacebaan);
             this.Controls.Add(this.btnOpenmarkt);
             this.Controls.Add(this.btnbankenrekening);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGame";
             this.Text = "Game";
             this.Load += new System.EventHandler(this.FrmGame_Load_1);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSettings));
             this.gpbkleur = new System.Windows.Forms.GroupBox();
             this.rdbgrijs = new System.Windows.Forms.RadioButton();
             this.rdbgroen = new System.Windows.Forms.RadioButton();
@@ -38,11 +39,11 @@
             this.txtgebruiker = new System.Windows.Forms.TextBox();
             this.btnterug = new System.Windows.Forms.Button();
             this.gpbmuziek = new System.Windows.Forms.GroupBox();
+            this.rdbgeen = new System.Windows.Forms.RadioButton();
             this.rdbsong3 = new System.Windows.Forms.RadioButton();
             this.rdbsong2 = new System.Windows.Forms.RadioButton();
             this.rdbsong1 = new System.Windows.Forms.RadioButton();
             this.btnreset = new System.Windows.Forms.Button();
-            this.rdbgeen = new System.Windows.Forms.RadioButton();
             this.gpbkleur.SuspendLayout();
             this.gpbmuziek.SuspendLayout();
             this.SuspendLayout();
@@ -159,6 +160,17 @@
             this.gpbmuziek.Text = "Achtergrondmuziek";
             this.gpbmuziek.Enter += new System.EventHandler(this.gpbmuziek_Enter);
             // 
+            // rdbgeen
+            // 
+            this.rdbgeen.AutoSize = true;
+            this.rdbgeen.Location = new System.Drawing.Point(6, 85);
+            this.rdbgeen.Name = "rdbgeen";
+            this.rdbgeen.Size = new System.Drawing.Size(51, 17);
+            this.rdbgeen.TabIndex = 3;
+            this.rdbgeen.Text = "Geen";
+            this.rdbgeen.UseVisualStyleBackColor = true;
+            this.rdbgeen.CheckedChanged += new System.EventHandler(this.Rdbgeen_CheckedChanged);
+            // 
             // rdbsong3
             // 
             this.rdbsong3.AutoSize = true;
@@ -202,17 +214,6 @@
             this.btnreset.UseVisualStyleBackColor = true;
             this.btnreset.Click += new System.EventHandler(this.Btnreset_Click);
             // 
-            // rdbgeen
-            // 
-            this.rdbgeen.AutoSize = true;
-            this.rdbgeen.Location = new System.Drawing.Point(6, 85);
-            this.rdbgeen.Name = "rdbgeen";
-            this.rdbgeen.Size = new System.Drawing.Size(51, 17);
-            this.rdbgeen.TabIndex = 3;
-            this.rdbgeen.Text = "Geen";
-            this.rdbgeen.UseVisualStyleBackColor = true;
-            this.rdbgeen.CheckedChanged += new System.EventHandler(this.Rdbgeen_CheckedChanged);
-            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,6 +225,7 @@
             this.Controls.Add(this.txtgebruiker);
             this.Controls.Add(this.lblgebruiker);
             this.Controls.Add(this.gpbkleur);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSettings";
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.FrmSettings_Load);

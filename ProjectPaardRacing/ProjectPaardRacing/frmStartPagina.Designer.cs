@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStartPagina));
             this.btnstartspel = new System.Windows.Forms.Button();
             this.btnsettings = new System.Windows.Forms.Button();
             this.btnexit = new System.Windows.Forms.Button();
@@ -83,6 +84,7 @@
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.btnsettings);
             this.Controls.Add(this.btnstartspel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmStartPagina";
             this.Text = "Start Pagina";
             this.Load += new System.EventHandler(this.frmStartPagina_Load);

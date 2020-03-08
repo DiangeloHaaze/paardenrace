@@ -6,7 +6,7 @@
       <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="BackGroundSongS" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Radetzky-Marsch.mp3</Value>
+      <Value Profile="(Default)">geen</Value>
     </Setting>
     <Setting Name="Paard1" Type="System.String" Scope="User">
       <Value Profile="(Default)">geen</Value>
@@ -25,6 +25,12 @@
     </Setting>
     <Setting Name="Item" Type="System.String" Scope="User">
       <Value Profile="(Default)">geen</Value>
+    </Setting>
+    <Setting Name="Saldo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="Geleend" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

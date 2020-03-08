@@ -119,17 +119,26 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings1.settings</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmbank.resx">
+      <DependentUpon>frmbank.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGame.resx">
       <DependentUpon>frmGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frminloggen.resx">
       <DependentUpon>frminloggen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmmarkt.resx">
+      <DependentUpon>frmmarkt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRace.resx">
       <DependentUpon>frmRace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstal.resx">
+      <DependentUpon>frmstal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -174,9 +183,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Johann Strauss I - Radetzky-Marsch, Op. 228.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <COMReference Include="AxWMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -196,10 +202,31 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3873feaeca45660933ae7959e93e33b4_horse-race-track-clipart-horse-race-track-clip-art-images-3854-_1000-1000.jpeg" />
+    <None Include="Resources\racetrack.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\racetrack.png" />
+    <None Include="Resources\Ja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lucina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Margot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timmy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paardenvoer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paardenvoer3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paardenvoer1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
