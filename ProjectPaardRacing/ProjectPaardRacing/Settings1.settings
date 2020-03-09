@@ -17,20 +17,14 @@
     <Setting Name="Paard3" Type="System.String" Scope="User">
       <Value Profile="(Default)">geen</Value>
     </Setting>
-    <Setting Name="Wins" Type="System.String" Scope="User">
+    <Setting Name="Wins" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Losses" Type="System.String" Scope="User">
+    <Setting Name="Losses" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="Item" Type="System.String" Scope="User">
-      <Value Profile="(Default)">geen</Value>
     </Setting>
     <Setting Name="Saldo" Type="System.Double" Scope="User">
       <Value Profile="(Default)">200</Value>
-    </Setting>
-    <Setting Name="Geleend" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="GekozenPaard" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -51,6 +45,15 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Paard3levens" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Aantalitem1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Aantalitem2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Aantalitem3" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>

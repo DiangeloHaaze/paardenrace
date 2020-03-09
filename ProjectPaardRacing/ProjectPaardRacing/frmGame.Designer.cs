@@ -98,18 +98,20 @@
             // lblSaldo
             // 
             this.lblSaldo.AutoSize = true;
-            this.lblSaldo.Location = new System.Drawing.Point(507, 9);
+            this.lblSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldo.Location = new System.Drawing.Point(496, 33);
             this.lblSaldo.Name = "lblSaldo";
-            this.lblSaldo.Size = new System.Drawing.Size(37, 13);
+            this.lblSaldo.Size = new System.Drawing.Size(54, 20);
             this.lblSaldo.TabIndex = 6;
             this.lblSaldo.Text = "Saldo:";
             // 
             // lblSaldoEuro
             // 
             this.lblSaldoEuro.AutoSize = true;
-            this.lblSaldoEuro.Location = new System.Drawing.Point(550, 9);
+            this.lblSaldoEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldoEuro.Location = new System.Drawing.Point(547, 33);
             this.lblSaldoEuro.Name = "lblSaldoEuro";
-            this.lblSaldoEuro.Size = new System.Drawing.Size(40, 13);
+            this.lblSaldoEuro.Size = new System.Drawing.Size(59, 20);
             this.lblSaldoEuro.TabIndex = 9;
             this.lblSaldoEuro.Text = "bedrag";
             // 
@@ -197,6 +199,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGame";
             this.Text = "Game";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmGame_FormClosed);
             this.Load += new System.EventHandler(this.FrmGame_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

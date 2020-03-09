@@ -56,6 +56,9 @@
             this.pcbpaardthree = new System.Windows.Forms.PictureBox();
             this.pcbpaardtwee = new System.Windows.Forms.PictureBox();
             this.pcbpaardeen = new System.Windows.Forms.PictureBox();
+            this.lblgras = new System.Windows.Forms.Label();
+            this.lblnoten = new System.Windows.Forms.Label();
+            this.lblvollemaaltijd = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbitemdrie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbitemtwee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbitemeen)).BeginInit();
@@ -237,7 +240,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 539);
+            this.label1.Location = new System.Drawing.Point(110, 552);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 24;
@@ -246,7 +249,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(293, 539);
+            this.label2.Location = new System.Drawing.Point(293, 552);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 25;
@@ -255,7 +258,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(488, 539);
+            this.label3.Location = new System.Drawing.Point(488, 552);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 26;
@@ -324,11 +327,41 @@
             this.pcbpaardeen.TabIndex = 0;
             this.pcbpaardeen.TabStop = false;
             // 
+            // lblgras
+            // 
+            this.lblgras.AutoSize = true;
+            this.lblgras.Location = new System.Drawing.Point(110, 539);
+            this.lblgras.Name = "lblgras";
+            this.lblgras.Size = new System.Drawing.Size(32, 13);
+            this.lblgras.TabIndex = 27;
+            this.lblgras.Text = "Gras:";
+            // 
+            // lblnoten
+            // 
+            this.lblnoten.AutoSize = true;
+            this.lblnoten.Location = new System.Drawing.Point(293, 539);
+            this.lblnoten.Name = "lblnoten";
+            this.lblnoten.Size = new System.Drawing.Size(39, 13);
+            this.lblnoten.TabIndex = 28;
+            this.lblnoten.Text = "Noten:";
+            // 
+            // lblvollemaaltijd
+            // 
+            this.lblvollemaaltijd.AutoSize = true;
+            this.lblvollemaaltijd.Location = new System.Drawing.Point(488, 539);
+            this.lblvollemaaltijd.Name = "lblvollemaaltijd";
+            this.lblvollemaaltijd.Size = new System.Drawing.Size(72, 13);
+            this.lblvollemaaltijd.TabIndex = 29;
+            this.lblvollemaaltijd.Text = "Volle Maaltijd:";
+            // 
             // frmmarkt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 632);
+            this.Controls.Add(this.lblvollemaaltijd);
+            this.Controls.Add(this.lblnoten);
+            this.Controls.Add(this.lblgras);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -359,6 +392,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmmarkt";
             this.Text = "frmmarkt";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmmarkt_FormClosed);
             this.Load += new System.EventHandler(this.frmmarkt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbitemdrie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbitemtwee)).EndInit();
@@ -400,5 +434,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblgras;
+        private System.Windows.Forms.Label lblnoten;
+        private System.Windows.Forms.Label lblvollemaaltijd;
     }
 }

@@ -87,6 +87,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmStartPagina";
             this.Text = "Start Pagina";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmStartPagina_FormClosed);
             this.Load += new System.EventHandler(this.frmStartPagina_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

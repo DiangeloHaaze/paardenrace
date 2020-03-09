@@ -12,7 +12,7 @@ namespace ProjectPaardRacing {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.3.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
     internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
@@ -86,9 +86,9 @@ namespace ProjectPaardRacing {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string Wins {
+        public int Wins {
             get {
-                return ((string)(this["Wins"]));
+                return ((int)(this["Wins"]));
             }
             set {
                 this["Wins"] = value;
@@ -98,24 +98,12 @@ namespace ProjectPaardRacing {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string Losses {
+        public int Losses {
             get {
-                return ((string)(this["Losses"]));
+                return ((int)(this["Losses"]));
             }
             set {
                 this["Losses"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("geen")]
-        public string Item {
-            get {
-                return ((string)(this["Item"]));
-            }
-            set {
-                this["Item"] = value;
             }
         }
         
@@ -128,18 +116,6 @@ namespace ProjectPaardRacing {
             }
             set {
                 this["Saldo"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Geleend {
-            get {
-                return ((int)(this["Geleend"]));
-            }
-            set {
-                this["Geleend"] = value;
             }
         }
         
@@ -224,6 +200,42 @@ namespace ProjectPaardRacing {
             }
             set {
                 this["Paard3levens"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Aantalitem1 {
+            get {
+                return ((int)(this["Aantalitem1"]));
+            }
+            set {
+                this["Aantalitem1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Aantalitem2 {
+            get {
+                return ((int)(this["Aantalitem2"]));
+            }
+            set {
+                this["Aantalitem2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Aantalitem3 {
+            get {
+                return ((int)(this["Aantalitem3"]));
+            }
+            set {
+                this["Aantalitem3"] = value;
             }
         }
     }

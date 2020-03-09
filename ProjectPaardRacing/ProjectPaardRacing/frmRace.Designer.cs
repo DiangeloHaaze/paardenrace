@@ -176,6 +176,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRace";
             this.Text = "Paardenrace";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmRace_FormClosed);
             this.Load += new System.EventHandler(this.frmRace_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbx3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx2)).EndInit();

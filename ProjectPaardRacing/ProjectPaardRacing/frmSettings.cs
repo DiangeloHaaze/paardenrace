@@ -13,7 +13,6 @@ namespace ProjectPaardRacing
 {
     public partial class frmSettings : Form
     {
-        string naam;
         public frmSettings()
         {
             InitializeComponent();
@@ -36,10 +35,10 @@ namespace ProjectPaardRacing
 
         private void Btnterug_Click(object sender, EventArgs e)
         {
-            //Knop om terug naar het startscherm te gaan.
+            //Knop om terug naar het startscherm te gaan. Hier word ook gekeken als de gebruiker zijn naam weizigde dat hij/zij dit niet gwn leeg liet
             if (frminloggen.username.Equals(""))
             {
-                frminloggen.username = "Anoniem";
+                frminloggen.username = "anoniem";
             }
             frmStartPagina frm = new frmStartPagina();
             frm.Show();
@@ -140,12 +139,21 @@ namespace ProjectPaardRacing
 
         private void Btnreset_Click(object sender, EventArgs e)
         {
+            //het resetten van alle gegevens die door er in settings1 zitten
             Settings1.Default.backGroundColorS = 0;
             Settings1.Default.BackGroundSongS = "geen";
             Settings1.Default.Paard1 = "geen";
             Settings1.Default.Paard2 = "geen";
             Settings1.Default.Paard3 = "geen";
+            Settings1.Default.Aantalitem1 = 0;
+            Settings1.Default.Aantalitem2 = 0;
+            Settings1.Default.Aantalitem3 = 0;
+            Settings1.Default.Paard1levens = 0;
+            Settings1.Default.Paard2levens = 0;
+            Settings1.Default.Paard3levens = 0;
             Settings1.Default.Saldo = 0;
+            Settings1.Default.Wins = 0;
+            Settings1.Default.Losses = 0;
             Settings1.Default.stal1check = false;
             Settings1.Default.stal2check = false;
             Settings1.Default.stal3check = false;
@@ -155,6 +163,18 @@ namespace ProjectPaardRacing
         private void Rdbgeen_CheckedChanged(object sender, EventArgs e)
         {
             Songwissel(4);
+        }
+
+        private void frmSettings_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Knop om terug naar het startscherm te gaan.
+            if (frminloggen.username.Equals(""))
+            {
+                frminloggen.username = "Anoniem";
+            }
+            frmStartPagina frm = new frmStartPagina();
+            frm.Show();
+            this.Hide();
         }
     }
 }

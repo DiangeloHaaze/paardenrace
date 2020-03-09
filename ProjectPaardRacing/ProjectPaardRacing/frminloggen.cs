@@ -14,7 +14,6 @@ namespace ProjectPaardRacing
     {
         //publieke variabele die de gebruikersnaam doorgeeft.
         public static string username;
-        public static double saldo = Settings1.Default.Saldo;
         public frminloggen()
         {
             InitializeComponent();
@@ -42,7 +41,6 @@ namespace ProjectPaardRacing
 
         private void Frminloggen_Load(object sender, EventArgs e)
         {
-            
             kleurwissel(Settings1.Default.backGroundColorS);
         }
         private void kleurwissel(int kleur)

@@ -109,6 +109,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmbank";
             this.Text = "bank";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmbank_FormClosed);
             this.Load += new System.EventHandler(this.frmbank_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

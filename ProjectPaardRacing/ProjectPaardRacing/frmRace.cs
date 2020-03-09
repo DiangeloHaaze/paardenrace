@@ -20,8 +20,32 @@ namespace ProjectPaardRacing
         private void frmRace_Load(object sender, EventArgs e)
         {
             lblSaldoBedrag.Text = Convert.ToString(Settings1.Default.Saldo);
+            kleurwissel(Settings1.Default.backGroundColorS);
 
         }
+        private void kleurwissel(int kleur)
+        {
+            //Dit zorgt ervoor dat bij het aanpassen van het kleur het juiste kleurtje word gepakt en aangepast
+            switch (kleur)
+            {
+                case 1:
+                    this.BackColor = Color.Yellow;
+                    break;
+                case 2:
+                    this.BackColor = Color.Red;
+                    break;
+                case 3:
+                    this.BackColor = Color.Blue;
+                    break;
+                case 4:
+                    this.BackColor = Color.Green;
+                    break;
+                case 5:
+                    this.BackColor = Color.Gray;
+                    break;
+            }
+        }
+
         int hoogstesnelheid, laagstesnelheid;
         double totaalbedrag;
         Boolean levens;
@@ -42,22 +66,19 @@ namespace ProjectPaardRacing
                 switch (Settings1.Default.GekozenPaard)
                 {
                     case "Paard1":
-                        laagstesnelheid = 0;
-                        hoogstesnelheid = 5;
+                        snelheid(Settings1.Default.Paard1);
                         Settings1.Default.Paard1levens = Settings1.Default.Paard1levens - 1;
                         if (Settings1.Default.Paard1levens < 0) { levens = false; } else { levens = true; }
 
                         break;
                     case "Paard2":
-                        laagstesnelheid = 3;
-                        hoogstesnelheid = 10;
-                        Settings1.Default.Paard2levens = Settings1.Default.Paard1levens - 1;
+                        snelheid(Settings1.Default.Paard2);
+                        Settings1.Default.Paard2levens = Settings1.Default.Paard2levens - 1;
                         if (Settings1.Default.Paard2levens < 0) { levens = false; } else { levens = true; }
                         break;
                     case "Paard3":
-                        laagstesnelheid = 8;
-                        hoogstesnelheid = 15;
-                        Settings1.Default.Paard3levens = Settings1.Default.Paard1levens - 1;
+                        snelheid(Settings1.Default.Paard3);
+                        Settings1.Default.Paard3levens = Settings1.Default.Paard3levens - 1;
                         if (Settings1.Default.Paard3levens < 0) { levens = false; } else { levens = true; }
                         break;
                 }
@@ -69,6 +90,24 @@ namespace ProjectPaardRacing
             }   
            
         }
+        private void snelheid(string naam)
+        {
+            switch (naam)
+            {
+                case "Ja":
+                    laagstesnelheid = 0;
+                    hoogstesnelheid = 5;
+                    break;
+                case "Timmy":
+                    laagstesnelheid = 3;
+                    hoogstesnelheid = 10;
+                    break;
+                case "Margot":
+                    laagstesnelheid = 8;
+                    hoogstesnelheid = 15;
+                    break;
+            }
+        }
 
         private void btnTerug_Click(object sender, EventArgs e)
         {
@@ -79,6 +118,14 @@ namespace ProjectPaardRacing
 
         Random willekeurig = new Random();
         int get1,get2,get3;
+
+        private void frmRace_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmGame game = new frmGame();
+            game.Show();
+            this.Hide();
+        }
+
         int inzetbedrag;
         private void btnInzetten_Click(object sender, EventArgs e)
         {
@@ -105,7 +152,7 @@ namespace ProjectPaardRacing
                 get2 = willekeurig.Next(laagstesnelheid, hoogstesnelheid);
                 get3 = willekeurig.Next(laagstesnelheid, hoogstesnelheid);
 
-                pbx1.Left = pbx1.Left+get1+10;
+                pbx1.Left = pbx1.Left+get1;
                 pbx2.Left = pbx2.Left+get2;
                 pbx3.Left = pbx3.Left+get3;
             }
@@ -115,9 +162,10 @@ namespace ProjectPaardRacing
 
                 if (pbx1.Location.X > 699)
                 {
-                    totaalbedrag = 50 + (inzetbedrag * 1.5);
+                    totaalbedrag = 250 + (inzetbedrag * 1.5);
                     MessageBox.Show("Profficiat, je paard heeft gewonnen! Je verdient " + totaalbedrag + " euro!", "Resultaat");
                     Settings1.Default.Saldo = Settings1.Default.Saldo + totaalbedrag;
+                    Settings1.Default.Wins += 1;
                     Settings1.Default.Save();
                     lblSaldoBedrag.Text = Convert.ToString(Settings1.Default.Saldo);
                     inzetbedrag = 0;
@@ -125,6 +173,7 @@ namespace ProjectPaardRacing
                 else
                 {
                     MessageBox.Show("Jammer, je bent verloren, je verdient niets.", "Resultaat");
+                    Settings1.Default.Losses += 1;
                 }
                 
             }

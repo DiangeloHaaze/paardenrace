@@ -228,6 +228,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSettings";
             this.Text = "Settings";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmSettings_FormClosed);
             this.Load += new System.EventHandler(this.FrmSettings_Load);
             this.gpbkleur.ResumeLayout(false);
             this.gpbkleur.PerformLayout();

@@ -82,5 +82,10 @@ namespace ProjectPaardRacing
             this.Hide();
             player.controls.stop();
         }
+
+        private void frmStartPagina_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
