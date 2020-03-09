@@ -37,8 +37,6 @@
             this.lblSaldo = new System.Windows.Forms.Label();
             this.lblSaldoEuro = new System.Windows.Forms.Label();
             this.lblGebruikersnaam = new System.Windows.Forms.Label();
-            this.lblLevel = new System.Windows.Forms.Label();
-            this.lblLevelAantal = new System.Windows.Forms.Label();
             this.lblGewonnen = new System.Windows.Forms.Label();
             this.lblVerloren = new System.Windows.Forms.Label();
             this.lblGewonnenAant = new System.Windows.Forms.Label();
@@ -125,24 +123,6 @@
             this.lblGebruikersnaam.TabIndex = 5;
             this.lblGebruikersnaam.Text = "Gebruikersnaam";
             // 
-            // lblLevel
-            // 
-            this.lblLevel.AutoSize = true;
-            this.lblLevel.Location = new System.Drawing.Point(336, 9);
-            this.lblLevel.Name = "lblLevel";
-            this.lblLevel.Size = new System.Drawing.Size(36, 13);
-            this.lblLevel.TabIndex = 10;
-            this.lblLevel.Text = "Level:";
-            // 
-            // lblLevelAantal
-            // 
-            this.lblLevelAantal.AutoSize = true;
-            this.lblLevelAantal.Location = new System.Drawing.Point(378, 9);
-            this.lblLevelAantal.Name = "lblLevelAantal";
-            this.lblLevelAantal.Size = new System.Drawing.Size(13, 13);
-            this.lblLevelAantal.TabIndex = 11;
-            this.lblLevelAantal.Text = "0";
-            // 
             // lblGewonnen
             // 
             this.lblGewonnen.AutoSize = true;
@@ -206,8 +186,6 @@
             this.Controls.Add(this.lblGewonnenAant);
             this.Controls.Add(this.lblVerloren);
             this.Controls.Add(this.lblGewonnen);
-            this.Controls.Add(this.lblLevelAantal);
-            this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.lblSaldoEuro);
             this.Controls.Add(this.lblSaldo);
             this.Controls.Add(this.lblGebruikersnaam);
@@ -240,8 +218,6 @@
         private System.Windows.Forms.Label lblSaldo;
         private System.Windows.Forms.Label lblSaldoEuro;
         private System.Windows.Forms.Label lblGebruikersnaam;
-        private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.Label lblLevelAantal;
         private System.Windows.Forms.Label lblGewonnen;
         private System.Windows.Forms.Label lblVerloren;
         private System.Windows.Forms.Label lblGewonnenAant;

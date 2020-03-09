@@ -12,7 +12,7 @@ namespace ProjectPaardRacing {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.3.0.0")]
     internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
@@ -122,9 +122,9 @@ namespace ProjectPaardRacing {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("200")]
-        public int Saldo {
+        public double Saldo {
             get {
-                return ((int)(this["Saldo"]));
+                return ((double)(this["Saldo"]));
             }
             set {
                 this["Saldo"] = value;
@@ -140,6 +140,90 @@ namespace ProjectPaardRacing {
             }
             set {
                 this["Geleend"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string GekozenPaard {
+            get {
+                return ((string)(this["GekozenPaard"]));
+            }
+            set {
+                this["GekozenPaard"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool stal1check {
+            get {
+                return ((bool)(this["stal1check"]));
+            }
+            set {
+                this["stal1check"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool stal2check {
+            get {
+                return ((bool)(this["stal2check"]));
+            }
+            set {
+                this["stal2check"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool stal3check {
+            get {
+                return ((bool)(this["stal3check"]));
+            }
+            set {
+                this["stal3check"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Paard1levens {
+            get {
+                return ((int)(this["Paard1levens"]));
+            }
+            set {
+                this["Paard1levens"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Paard2levens {
+            get {
+                return ((int)(this["Paard2levens"]));
+            }
+            set {
+                this["Paard2levens"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Paard3levens {
+            get {
+                return ((int)(this["Paard3levens"]));
+            }
+            set {
+                this["Paard3levens"] = value;
             }
         }
     }

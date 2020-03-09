@@ -19,33 +19,115 @@ namespace ProjectPaardRacing
 
         private void frmRace_Load(object sender, EventArgs e)
         {
-            //Senne dit is gewoon om mee te geven waarvoor ik allemaal heb voorbereid. ALs je iets niet deed of een vraag hebt omdat ik onduidelijk was 
-            // Zeg het tegen mij in discord of in commands. Ik ga waarschijnlijk morgen avond hier nog wat aan werken/testen of alles werkt.
+            lblSaldoBedrag.Text = Convert.ToString(Settings1.Default.Saldo);
 
-            //1. Random encounters:
-            //      - Men moet een kans hebben om een sponser te krijgen die bij elke wedstrijd geld geeft.
-            //      - Men moet de kans krijgen om een de betere paarden te kunnen kopen
-            //      - Dat paarden gewond kunnen worden.
-            //      - Wat random casual encounters gelijk "Een fan wou een foto nemen van u en u paard". waardoor de speler een beetje xp extra krijgt.
+        }
+        int hoogstesnelheid, laagstesnelheid;
+        double totaalbedrag;
+        Boolean levens;
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            //reset de positie van de paarden
+            pbx1.Location = new Point(49, 59);
+            pbx2.Location = new Point(49, 125);
+            pbx3.Location = new Point(49, 196);
+            //controleren of er een paard is geselecteerd etc. omdat je anders niet aan de race kan beginnen
+            if (Settings1.Default.stal1check == false && Settings1.Default.stal2check == false && Settings1.Default.stal3check == false)
+            {
+                MessageBox.Show("Je moet eerst een paard selecteren in de stal voordat je kan beginnen racen!", "Waarschuwing");
+            }
+            else
+            {
+                //controleerd welk paard is geselecteerd in de stal en past zo de snelheid aan.
+                switch (Settings1.Default.GekozenPaard)
+                {
+                    case "Paard1":
+                        laagstesnelheid = 0;
+                        hoogstesnelheid = 5;
+                        Settings1.Default.Paard1levens = Settings1.Default.Paard1levens - 1;
+                        if (Settings1.Default.Paard1levens < 0) { levens = false; } else { levens = true; }
 
-            //2. Paarden moeten eerst rusten nadat ze drie keer hebben gespeeld dus dat er in de stal moet gevoerd worden
+                        break;
+                    case "Paard2":
+                        laagstesnelheid = 3;
+                        hoogstesnelheid = 10;
+                        Settings1.Default.Paard2levens = Settings1.Default.Paard1levens - 1;
+                        if (Settings1.Default.Paard2levens < 0) { levens = false; } else { levens = true; }
+                        break;
+                    case "Paard3":
+                        laagstesnelheid = 8;
+                        hoogstesnelheid = 15;
+                        Settings1.Default.Paard3levens = Settings1.Default.Paard1levens - 1;
+                        if (Settings1.Default.Paard3levens < 0) { levens = false; } else { levens = true; }
+                        break;
+                }
+                if(levens==false)
+                {
+                    MessageBox.Show("Je paard is te uitgeput om te spelen, ga naar de markt om voeding voor hem te kopen of kies een ander paard.", "info");
+                }
+                else { timer1.Start(); }
+            }   
+           
+        }
 
-            //3. Dat men kan kiezen welk paard ze gaan gebruiken dus kijk of er een paard in de stal zit of niet 
+        private void btnTerug_Click(object sender, EventArgs e)
+        {
+            frmGame game = new frmGame();
+            game.Show();
+            this.Hide();
+        }
 
-            //4. Dat het paard moe word na de race en dat men dit kan zien in de stal en men hen moet voederen dus als je kunt zorge dat er je de variabele kunt
-            //   doen vermindere zou geweldig zijn.
+        Random willekeurig = new Random();
+        int get1,get2,get3;
+        int inzetbedrag;
+        private void btnInzetten_Click(object sender, EventArgs e)
+        {
+            if(!txtInzetten.Text.Equals(""))
+            {
+               inzetbedrag = Convert.ToInt32(txtInzetten.Text);
+                if(inzetbedrag>Settings1.Default.Saldo)
+                {
+                    MessageBox.Show("Je hebt niet genoeg geld om in te zetten!", "Waarschuwing");
+                    inzetbedrag = 0;
+                }
+                Settings1.Default.Saldo = Settings1.Default.Saldo - inzetbedrag;
+                Settings1.Default.Save();
+                lblSaldoBedrag.Text = Convert.ToString(Settings1.Default.Saldo);
+            }
+            txtInzetten.Text = "";
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //de paarden blijven racen tot 1 van de paarden op de x coordinaat 700 is.
+            if (pbx1.Location.X < 700 && pbx2.Location.X < 700 && pbx3.Location.X < 700)
+            {
+                get1 = willekeurig.Next(laagstesnelheid, hoogstesnelheid);
+                get2 = willekeurig.Next(laagstesnelheid, hoogstesnelheid);
+                get3 = willekeurig.Next(laagstesnelheid, hoogstesnelheid);
 
-            //5. Dat de paarden een kwaliteitsrang hebben die indiceert hoe goed een paard is en dus daarop verschillende snelheden heeft.
-            //      -Slecht -Oke -Goed -Uitstekend -Legendaries 
+                pbx1.Left = pbx1.Left+get1+10;
+                pbx2.Left = pbx2.Left+get2;
+                pbx3.Left = pbx3.Left+get3;
+            }
+            else
+            {
+                timer1.Stop();
 
-            //6. Dat de moeilijkheidsgraad verandert als men dit aanpast in settings en dat je dus minder kans maakt op te winnen
-
-            //7. Dat er een vuurspuwende draak uit het scherm komt en dan spreekt via een youtube clip en JK have fun en vraag maar als er iets is dat ge nie begreep.
-
-
-
-
-
+                if (pbx1.Location.X > 699)
+                {
+                    totaalbedrag = 50 + (inzetbedrag * 1.5);
+                    MessageBox.Show("Profficiat, je paard heeft gewonnen! Je verdient " + totaalbedrag + " euro!", "Resultaat");
+                    Settings1.Default.Saldo = Settings1.Default.Saldo + totaalbedrag;
+                    Settings1.Default.Save();
+                    lblSaldoBedrag.Text = Convert.ToString(Settings1.Default.Saldo);
+                    inzetbedrag = 0;
+                }
+                else
+                {
+                    MessageBox.Show("Jammer, je bent verloren, je verdient niets.", "Resultaat");
+                }
+                
+            }
         }
     }
 }

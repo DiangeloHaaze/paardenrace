@@ -39,7 +39,7 @@ namespace ProjectPaardRacing
             //Knop om terug naar het startscherm te gaan.
             if (frminloggen.username.Equals(""))
             {
-                frminloggen.username = "Annoniem";
+                frminloggen.username = "Anoniem";
             }
             frmStartPagina frm = new frmStartPagina();
             frm.Show();
@@ -146,6 +146,9 @@ namespace ProjectPaardRacing
             Settings1.Default.Paard2 = "geen";
             Settings1.Default.Paard3 = "geen";
             Settings1.Default.Saldo = 0;
+            Settings1.Default.stal1check = false;
+            Settings1.Default.stal2check = false;
+            Settings1.Default.stal3check = false;
             Settings1.Default.Save();
         }
 

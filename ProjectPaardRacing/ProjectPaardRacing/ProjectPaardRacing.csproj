@@ -228,5 +228,14 @@
   <ItemGroup>
     <None Include="Resources\Paardenvoer1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horseUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horseEnemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horseEnemy2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
